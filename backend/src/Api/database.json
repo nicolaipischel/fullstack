@@ -1,0 +1,15 @@
+{
+  "37c2d7f1-9515-493d-861e-07a02e9a9060": {
+    "Id": "37c2d7f1-9515-493d-861e-07a02e9a9060",
+    "Description": "",
+    "Status": 0,
+    "Manifacturer": "Audi",
+    "Model": "A1",
+    "HasInsurance": true,
+    "PurchaseYear": 2021,
+    "IsNewCar": true,
+    "PurchasePrice": 1,
+    "PaymentType": 1,
+    "ProductionYear": 2021
+  }
+}
