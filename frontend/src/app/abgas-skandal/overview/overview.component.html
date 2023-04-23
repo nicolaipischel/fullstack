@@ -1,0 +1,18 @@
+<h1>Aktuelle Aufträge</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th class="table-header">FallNr.</th>
+            <th class="table-header">Beschreibung</th>
+            <th class="table-header">Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let case of cases">
+            <td>{{case.id}}</td>
+            <td>{{case.description}}</td>
+            <td>{{statusDisplay[case.status]}}</td>
+        </tr>
+    </tbody>
+</table>
+<a class="btn btn-primary" [routerLink]="['faelle/neu']">Neuen Fall anlegen</a>

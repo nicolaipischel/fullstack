@@ -1,0 +1,19 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="form-group mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input type="text" class="form-control" formControlName="username" [ngClass]="{ 'is-invalid': formControls.username.touched && formControls.username.invalid}">
+        <div *ngIf="formControls.username.touched && formControls.username.invalid">
+            <div *ngIf="form.hasError('required', 'username')">Bitte geben Sie einen Benutzernamen ein.</div>
+        </div>
+    </div>
+    <div class="form-group mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" formControlName="password" [ngClass]="{ 'is-invalid': formControls.password.touched && formControls.password.invalid}">
+        <div *ngIf="formControls.password.touched && formControls.password.invalid">
+            <div *ngIf="form.hasError('required', 'password')">Bitte geben Sie ein Passwort ein.</div>
+        </div>
+    </div>
+    <button type="submit" [disabled]="form.invalid" class="btn btn-primary">Submit</button>
+</form>
+
+
